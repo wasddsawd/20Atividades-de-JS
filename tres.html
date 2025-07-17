@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="hello">
+      <p>Hello</p>
+    </div>
+    <button onclick="handleClick()">Adicionar parágrafo</button>
+        <a href="index.html">voltar</a>
+    <script>
+      function handleClick() {
+        const achar = document.getElementById("hello");
+        const criar = document.createElement("p");
+        const texto = document.createTextNode("World");
+        criar.appendChild(texto);
+        achar.appendChild(criar);
+      }
+    </script>
+  </body>
+</html>

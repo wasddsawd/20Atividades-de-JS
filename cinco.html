@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .amarelo {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="cor">Hello World</p>
+    <button id="quebrado">Trocar o fundo</button>
+        <a href="index.html">voltar</a>
+    <script defer>
+      const fazer = document.getElementById("quebrado");
+      function handleClick() {
+        const texto = document.getElementById("cor");
+        texto.classList.add("amarelo");
+      }
+      fazer.addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="Hello">Hello World</p>
+    <button id="quebrado" onclick="togglevisivel()">Sumir com o texto</button>
+    <button onclick="handleClick()">← Quebrar o botão</button>
+        <a href="index.html">voltar</a>
+    <script>
+      function togglevisivel() {
+        const sumir = document.getElementById("Hello");
+        const visivel = window.getComputedStyle(sumir).display === "block";
+        if (visivel) {
+          sumir.style.display = "none";
+        } else {
+          sumir.style.display = "block";
+        }
+      }
+      function handleClick() {
+        const achar = document.getElementById("quebrado");
+        const destruir = (achar.disabled = true);
+      }
+    </script>
+  </body>
+</html>

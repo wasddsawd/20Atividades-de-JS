@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>um</title>
+  </head>
+  <body>
+    <p id="texto">Hello World</p>
+    <button onclick="trocarTexto()">Troque aqui!</button>
+        <a href="index.html">voltar</a>
+    <script>
+      function trocarTexto() {
+        const conteudo = document.getElementById("texto");
+        conteudo.textContent = "Olá, Mundo.";
+      }
+    </script>
+  </body>
+</html>

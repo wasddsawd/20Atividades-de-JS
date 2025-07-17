@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="hello">Hello</p>
+    <button onclick="handleClick()">Arrumar a frase</button>
+        <a href="index.html">voltar</a>
+    <script>
+      function handleClick() {
+        const achar = document.querySelector(".hello");
+        const trocar = (achar.textContent = "Hello World");
+      }
+    </script>
+  </body>
+</html>
