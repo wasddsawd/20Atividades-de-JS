@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .ital {
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
-    <div><h1>Qual o melhor?</h1></div>
+    <h1>Escolha sua fonte</h1>
     <select name="pesquisa" id="pesquisa" onchange="handleChange()">
-      <option value="Hello">Hello</option>
-      <option value="World">World</option>
+      <option value="1">Itálico</option>
+      <option value="2">Negrito</option>
+      <option value="3">Sublinhado</option>
     </select>
     <div><p id="hello">Hello World.</p></div>
     <script>
       function handleChange() {
         let select = document.getElementById("pesquisa");
-        let selectedValue = select.options[select.selectedIndex].text;
+        let selectedValue = select.options[select.selectedIndex].value;
         const texto = document.getElementById("hello");
-        texto.textContent = selectedValue;
+        if (selectedValue == 1) {
+          texto.classList.add = "ital";
+        }
       }
     </script>
   </body>
